@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name         = 'ManTool'
-s.version      = '0.0.3'
+s.version      = '0.0.4'
 s.summary      = 'Swift工具库'
 s.homepage     = 'https://github.com/Nefuln/ManTool'
 s.license      = 'MIT'
