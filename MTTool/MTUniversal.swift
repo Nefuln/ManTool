@@ -50,11 +50,11 @@ let MTSystemUUID = UIDevice.current.identifierForVendor?.uuidString
 /** Home目录 */
 let MTHomeDirectoryPath = NSHomeDirectory()
 /** Documents目录 */
-let MTDocumentPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first as! String
+let MTDocumentPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! as String
 /** Libraty目录 */
-let MTLibratyPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first as! String
+let MTLibratyPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! as String
 /** Cache目录 */
-let MTCachePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first as! String
+let MTCachePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! as String
 /** Temp目录 */
 let MTTempPath = NSTemporaryDirectory()
 
