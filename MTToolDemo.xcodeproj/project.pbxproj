@@ -16,6 +16,7 @@
 		30AEBCF220E5498F005148F9 /* MTToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCF120E5498F005148F9 /* MTToolDemoUITests.swift */; };
 		30AEBD0320E549B9005148F9 /* UIDevice+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */; };
 		30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0220E549B8005148F9 /* MTUniversal.swift */; };
+		30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0620E55154005148F9 /* MTDeviceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		30AEBCF320E5498F005148F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MTExtension.swift"; sourceTree = "<group>"; };
 		30AEBD0220E549B8005148F9 /* MTUniversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTUniversal.swift; sourceTree = "<group>"; };
+		30AEBD0620E55154005148F9 /* MTDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +135,9 @@
 		30AEBCFF20E549B8005148F9 /* MTTool */ = {
 			isa = PBXGroup;
 			children = (
-				30AEBD0020E549B8005148F9 /* Extension */,
 				30AEBD0220E549B8005148F9 /* MTUniversal.swift */,
+				30AEBD0020E549B8005148F9 /* Extension */,
+				30AEBD0520E550BD005148F9 /* Helper */,
 			);
 			path = MTTool;
 			sourceTree = "<group>";
@@ -145,6 +148,14 @@
 				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		30AEBD0520E550BD005148F9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				30AEBD0620E55154005148F9 /* MTDeviceModel.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			files = (
 				30AEBD0320E549B9005148F9 /* UIDevice+MTExtension.swift in Sources */,
 				30AEBCD420E54983005148F9 /* ViewController.swift in Sources */,
+				30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
 				30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */,
 			);
