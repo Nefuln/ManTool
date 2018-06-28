@@ -53,6 +53,7 @@ extension UIDevice {
 // MARK: - 源数据
 fileprivate extension UIDevice {
     var platfromList: [MTDeviceModel] {
+        // 苹果设备类型说明 ： https://www.theiphonewiki.com/wiki/Models
         let i386 = MTDeviceModel(platform: "i386", deviceType: MTDeviceType.Simulator, desc: "Simulator")
         let x86_64 = MTDeviceModel(platform: "x86_64", deviceType: MTDeviceType.Simulator, desc: "Simulator")
 
