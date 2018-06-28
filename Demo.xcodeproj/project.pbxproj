@@ -13,7 +13,7 @@
 		8D4351261EE3BEE5003DB93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4351241EE3BEE5003DB93C /* Main.storyboard */; };
 		8D4351281EE3BEE5003DB93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4351271EE3BEE5003DB93C /* Assets.xcassets */; };
 		8D43512B1EE3BEE5003DB93C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4351291EE3BEE5003DB93C /* LaunchScreen.storyboard */; };
-		8D4351341EE3BF03003DB93C /* ManUniversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4351331EE3BF03003DB93C /* ManUniversal.swift */; };
+		8D4351341EE3BF03003DB93C /* MTUniversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4351331EE3BF03003DB93C /* MTUniversal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		8D4351271EE3BEE5003DB93C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D43512A1EE3BEE5003DB93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D43512C1EE3BEE5003DB93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D4351331EE3BF03003DB93C /* ManUniversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManUniversal.swift; sourceTree = "<group>"; };
+		8D4351331EE3BF03003DB93C /* MTUniversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTUniversal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		8D43510F1EE3BEE5003DB93C = {
 			isa = PBXGroup;
 			children = (
-				8D4351321EE3BF03003DB93C /* ManTool */,
+				8D4351321EE3BF03003DB93C /* MTTool */,
 				8D43511A1EE3BEE5003DB93C /* Demo */,
 				8D4351191EE3BEE5003DB93C /* Products */,
 			);
@@ -82,12 +82,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8D4351321EE3BF03003DB93C /* ManTool */ = {
+		8D4351321EE3BF03003DB93C /* MTTool */ = {
 			isa = PBXGroup;
 			children = (
-				8D4351331EE3BF03003DB93C /* ManUniversal.swift */,
+				8D4351331EE3BF03003DB93C /* MTUniversal.swift */,
 			);
-			path = ManTool;
+			path = MTTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +165,7 @@
 			files = (
 				8D4351231EE3BEE5003DB93C /* ViewController.m in Sources */,
 				8D4351201EE3BEE5003DB93C /* AppDelegate.m in Sources */,
-				8D4351341EE3BF03003DB93C /* ManUniversal.swift in Sources */,
+				8D4351341EE3BF03003DB93C /* MTUniversal.swift in Sources */,
 				8D43511D1EE3BEE5003DB93C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +327,7 @@
 				8D4351311EE3BEE5003DB93C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
