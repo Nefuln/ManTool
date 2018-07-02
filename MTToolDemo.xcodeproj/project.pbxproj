@@ -20,6 +20,8 @@
 		30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0620E55154005148F9 /* MTDeviceModel.swift */; };
 		30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */; };
 		30D592F820EA697400C9491C /* UIImage+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592F720EA697400C9491C /* UIImage+MTExtension.swift */; };
+		30D592FC20EA777400C9491C /* UIAlertController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */; };
+		30D592FE20EA788200C9491C /* UIButton+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		30AEBD0620E55154005148F9 /* MTDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceModel.swift; sourceTree = "<group>"; };
 		30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceTests.swift; sourceTree = "<group>"; };
 		30D592F720EA697400C9491C /* UIImage+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MTExtension.swift"; sourceTree = "<group>"; };
+		30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+MTExtension.swift"; sourceTree = "<group>"; };
+		30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+MTExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +156,9 @@
 		30AEBD0020E549B8005148F9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
+				30D592FA20EA728400C9491C /* Foundation */,
+				30D592F920EA727B00C9491C /* UI */,
 				30203BCE20EA123C001CD813 /* String+MTExtension.swift */,
-				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -165,6 +169,24 @@
 				30AEBD0620E55154005148F9 /* MTDeviceModel.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		30D592F920EA727B00C9491C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
+				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
+				30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */,
+				30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		30D592FA20EA728400C9491C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30AEBD0320E549B9005148F9 /* UIDevice+MTExtension.swift in Sources */,
+				30D592FC20EA777400C9491C /* UIAlertController+MTExtension.swift in Sources */,
 				30AEBCD420E54983005148F9 /* ViewController.swift in Sources */,
 				30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */,
+				30D592FE20EA788200C9491C /* UIButton+MTExtension.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
 				30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */,
 				30D592F820EA697400C9491C /* UIImage+MTExtension.swift in Sources */,
