@@ -2,8 +2,8 @@
 //  UIDeviceModel.swift
 //  MTToolDemo
 //
-//  Created by Nolan on 2018/6/29.
-//  Copyright © 2018年 Nolan. All rights reserved.
+//  Created by ManThirty on 2018/6/29.
+//  Copyright © 2018年 ManThirty All rights reserved.
 //
 
 import UIKit

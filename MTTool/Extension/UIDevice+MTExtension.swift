@@ -2,14 +2,13 @@
 //  UIDevice+MTExtension.swift
 //  Demo
 //
-//  Created by Nolan on 2018/6/28.
-//  Copyright © 2018年 Man. All rights reserved.
+//  Created by ManThirty on 2018/6/28.
+//  Copyright © 2018年 ManThirty All rights reserved.
 //
 
 import UIKit
 
 extension UIDevice {
-    
     /// 设备类型
     var deviceType: MTDeviceType {
         return self.deviceModel == nil ? .None : self.deviceModel!.deviceType

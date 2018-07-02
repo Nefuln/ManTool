@@ -2,8 +2,8 @@
 //  MTUniversal.swift
 //  MT_Swift_Tool
 //
-//  Created by jwn on 2017/3/15.
-//  Copyright © 2017年 jwn. All rights reserved.
+//  Created by ManThirty on 2017/3/15.
+//  Copyright © 2017年 ManThirty All rights reserved.
 //
 
 import UIKit

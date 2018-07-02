@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30203BCF20EA123C001CD813 /* String+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30203BCE20EA123C001CD813 /* String+MTExtension.swift */; };
 		30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD120E54983005148F9 /* AppDelegate.swift */; };
 		30AEBCD420E54983005148F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD320E54983005148F9 /* ViewController.swift */; };
 		30AEBCD720E54983005148F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AEBCD520E54983005148F9 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0220E549B8005148F9 /* MTUniversal.swift */; };
 		30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0620E55154005148F9 /* MTDeviceModel.swift */; };
 		30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */; };
+		30D592F820EA697400C9491C /* UIImage+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592F720EA697400C9491C /* UIImage+MTExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30203BCE20EA123C001CD813 /* String+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MTExtension.swift"; sourceTree = "<group>"; };
 		30AEBCCE20E54983005148F9 /* MTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCD120E54983005148F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30AEBCD320E54983005148F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		30AEBD0220E549B8005148F9 /* MTUniversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTUniversal.swift; sourceTree = "<group>"; };
 		30AEBD0620E55154005148F9 /* MTDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceModel.swift; sourceTree = "<group>"; };
 		30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceTests.swift; sourceTree = "<group>"; };
+		30D592F720EA697400C9491C /* UIImage+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MTExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
+				30203BCE20EA123C001CD813 /* String+MTExtension.swift */,
+				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 				30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
 				30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */,
+				30D592F820EA697400C9491C /* UIImage+MTExtension.swift in Sources */,
+				30203BCF20EA123C001CD813 /* String+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

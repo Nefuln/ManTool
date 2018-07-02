@@ -15,11 +15,5 @@ class ViewController: UIViewController {
         debugPrint(MTSystemModel)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
