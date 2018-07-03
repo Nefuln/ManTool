@@ -10,7 +10,6 @@ import XCTest
 @testable import MTToolDemo
 
 class MTDeviceTests: XCTestCase {
-
     func testDeviceInfo() {
         let deviceType = UIDevice.current.deviceType
         let deviceModel = UIDevice.current.deviceModel
