@@ -12,6 +12,8 @@
 		3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */; };
 		3063F68F20ECD13100A54496 /* UIView+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */; };
 		3063F69120ECF2D600A54496 /* UIApplication+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */; };
+		3063F69320ECF6E900A54496 /* UIColor+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */; };
+		3063F69520ECF7A800A54496 /* CGFloat+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */; };
 		30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD120E54983005148F9 /* AppDelegate.swift */; };
 		30AEBCD420E54983005148F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD320E54983005148F9 /* ViewController.swift */; };
 		30AEBCD720E54983005148F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AEBCD520E54983005148F9 /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserDefaultTests.swift; sourceTree = "<group>"; };
 		3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+MTExtension.swift"; sourceTree = "<group>"; };
+		3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MTExtension.swift"; sourceTree = "<group>"; };
+		3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+MTExtension.swift"; sourceTree = "<group>"; };
 		30AEBCCE20E54983005148F9 /* MTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCD120E54983005148F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30AEBCD320E54983005148F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,14 +206,15 @@
 		30D592F920EA727B00C9491C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
-				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
-				30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */,
-				30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */,
-				30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */,
-				30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */,
-				3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */,
 				3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */,
+				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
+				30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */,
+				30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */,
+				30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */,
+				3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */,
+				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
+				30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */,
+				3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */,
 				30AEBD0520E550BD005148F9 /* Helper */,
 			);
 			path = UI;
@@ -224,6 +229,7 @@
 				30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */,
 				30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */,
 				3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */,
+				3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -383,12 +389,14 @@
 				30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */,
 				30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */,
 				3063F68F20ECD13100A54496 /* UIView+MTExtension.swift in Sources */,
+				3063F69520ECF7A800A54496 /* CGFloat+MTExtension.swift in Sources */,
 				30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */,
 				30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */,
 				30D5930620EB4FC800C9491C /* Bool+MTExtension.swift in Sources */,
 				30AEBCE720E5498F005148F9 /* MTToolDemoTests.swift in Sources */,
 				30D5933F20EC694D00C9491C /* UIViewController+MTExtension.swift in Sources */,
 				3063F69120ECF2D600A54496 /* UIApplication+MTExtension.swift in Sources */,
+				3063F69320ECF6E900A54496 /* UIColor+MTExtension.swift in Sources */,
 				30D5934120EC74B400C9491C /* UIWindow+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
