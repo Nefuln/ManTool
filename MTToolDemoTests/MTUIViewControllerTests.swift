@@ -10,7 +10,6 @@ import XCTest
 class MTUIViewControllerTests: XCTestCase {
     
     func testUIViewController() {
-        debugPrint(UIViewController.current?.className ?? "没有")
         XCTAssert(UIViewController.current?.className == ViewController.className)
     }
 

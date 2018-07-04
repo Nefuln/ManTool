@@ -9,7 +9,6 @@ import XCTest
 class MTNSObjectTests: XCTestCase {
 
     func testObjectClassName() {
-        debugPrint(self.className)
         XCTAssertTrue(self.className == "MTNSObjectTests")
     }
     

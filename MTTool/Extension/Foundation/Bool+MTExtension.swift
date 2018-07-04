@@ -11,7 +11,7 @@ extension Bool {
     public var toInt: Int { return self ? 1 : 0 }
     
     /// 反转值
-    public var toggled: Bool {
+    public var inverted: Bool {
         return !self
     }
     
