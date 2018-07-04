@@ -25,6 +25,8 @@
 		30D5930220EB4AD900C9491C /* NSObject+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930120EB4AD900C9491C /* NSObject+MTExtension.swift */; };
 		30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */; };
 		30D5930620EB4FC800C9491C /* Bool+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */; };
+		30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */; };
+		30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933A20EBBACB00C9491C /* MTStringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		30D5930120EB4AD900C9491C /* NSObject+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+MTExtension.swift"; sourceTree = "<group>"; };
 		30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTNSObjectTests.swift; sourceTree = "<group>"; };
 		30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+MTExtension.swift"; sourceTree = "<group>"; };
+		30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+MTExtension.swift"; sourceTree = "<group>"; };
+		30D5933A20EBBACB00C9491C /* MTStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTStringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				30AEBCE620E5498F005148F9 /* MTToolDemoTests.swift */,
 				30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */,
 				30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */,
+				30D5933A20EBBACB00C9491C /* MTStringTests.swift */,
 				30AEBCE820E5498F005148F9 /* Info.plist */,
 			);
 			path = MTToolDemoTests;
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				30203BCE20EA123C001CD813 /* String+MTExtension.swift */,
+				30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */,
 				30D5930120EB4AD900C9491C /* NSObject+MTExtension.swift */,
 				30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */,
 			);
@@ -347,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */,
+				30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */,
+				30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */,
 				30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */,
 				30D5930620EB4FC800C9491C /* Bool+MTExtension.swift in Sources */,
 				30AEBCE720E5498F005148F9 /* MTToolDemoTests.swift in Sources */,

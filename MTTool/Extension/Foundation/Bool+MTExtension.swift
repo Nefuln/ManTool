@@ -16,7 +16,7 @@ extension Bool {
     }
     
     ///  将值反转
-    @discardableResult
+    @discardableResult // 不用返回值不报警告⚠️
     public mutating func invert() -> Bool {
         self = !self
         return self
