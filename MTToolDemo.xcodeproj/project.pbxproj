@@ -28,6 +28,9 @@
 		30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */; };
 		30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933A20EBBACB00C9491C /* MTStringTests.swift */; };
 		30D5933D20EC66ED00C9491C /* Timer+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */; };
+		30D5933F20EC694D00C9491C /* UIViewController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */; };
+		30D5934120EC74B400C9491C /* UIWindow+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */; };
+		30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+MTExtension.swift"; sourceTree = "<group>"; };
 		30D5933A20EBBACB00C9491C /* MTStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTStringTests.swift; sourceTree = "<group>"; };
 		30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+MTExtension.swift"; sourceTree = "<group>"; };
+		30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MTExtension.swift"; sourceTree = "<group>"; };
+		30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+MTExtension.swift"; sourceTree = "<group>"; };
+		30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUIViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 				30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */,
 				30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */,
 				30D5933A20EBBACB00C9491C /* MTStringTests.swift */,
+				30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */,
 				30AEBCE820E5498F005148F9 /* Info.plist */,
 			);
 			path = MTToolDemoTests;
@@ -190,6 +197,8 @@
 				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
 				30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */,
 				30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */,
+				30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */,
+				30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */,
 				30AEBD0520E550BD005148F9 /* Helper */,
 			);
 			path = UI;
@@ -358,10 +367,13 @@
 				30D5933D20EC66ED00C9491C /* Timer+MTExtension.swift in Sources */,
 				30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */,
 				30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */,
+				30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */,
 				30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */,
 				30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */,
 				30D5930620EB4FC800C9491C /* Bool+MTExtension.swift in Sources */,
 				30AEBCE720E5498F005148F9 /* MTToolDemoTests.swift in Sources */,
+				30D5933F20EC694D00C9491C /* UIViewController+MTExtension.swift in Sources */,
+				30D5934120EC74B400C9491C /* UIWindow+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
