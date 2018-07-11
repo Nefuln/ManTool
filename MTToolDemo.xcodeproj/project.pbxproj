@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30203BCF20EA123C001CD813 /* String+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30203BCE20EA123C001CD813 /* String+MTExtension.swift */; };
-		3053D57C20F60CF900F5FA66 /* CGRect+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57B20F60CF900F5FA66 /* CGRect+MTExtension.swift */; };
-		3063F68920ECCEBE00A54496 /* UserDefault+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */; };
+		3053D58920F6122800F5FA66 /* UIViewController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */; };
+		3053D58A20F6122800F5FA66 /* UIDevice+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */; };
+		3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */; };
+		3053D58C20F6122800F5FA66 /* UIButton+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58120F6122700F5FA66 /* UIButton+MTExtension.swift */; };
+		3053D58D20F6122800F5FA66 /* MTDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58320F6122700F5FA66 /* MTDeviceModel.swift */; };
+		3053D58E20F6122800F5FA66 /* UIImage+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58420F6122700F5FA66 /* UIImage+MTExtension.swift */; };
+		3053D58F20F6122800F5FA66 /* UIView+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58520F6122800F5FA66 /* UIView+MTExtension.swift */; };
+		3053D59020F6122800F5FA66 /* UIWindow+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58620F6122800F5FA66 /* UIWindow+MTExtension.swift */; };
+		3053D59120F6122800F5FA66 /* UIAlertController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58720F6122800F5FA66 /* UIAlertController+MTExtension.swift */; };
+		3053D59220F6122800F5FA66 /* UIColor+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58820F6122800F5FA66 /* UIColor+MTExtension.swift */; };
+		3053D59C20F6125100F5FA66 /* String+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59320F6125000F5FA66 /* String+MTExtension.swift */; };
+		3053D59D20F6125100F5FA66 /* CGRect+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59420F6125000F5FA66 /* CGRect+MTExtension.swift */; };
+		3053D59E20F6125100F5FA66 /* Bool+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59520F6125000F5FA66 /* Bool+MTExtension.swift */; };
+		3053D59F20F6125100F5FA66 /* CGFloat+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59620F6125000F5FA66 /* CGFloat+MTExtension.swift */; };
+		3053D5A020F6125100F5FA66 /* Timer+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59720F6125000F5FA66 /* Timer+MTExtension.swift */; };
+		3053D5A120F6125100F5FA66 /* UserDefault+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59820F6125000F5FA66 /* UserDefault+MTExtension.swift */; };
+		3053D5A220F6125100F5FA66 /* Data+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59920F6125100F5FA66 /* Data+MTExtension.swift */; };
+		3053D5A320F6125100F5FA66 /* Character+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */; };
+		3053D5A420F6125100F5FA66 /* NSObject+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */; };
 		3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */; };
-		3063F68F20ECD13100A54496 /* UIView+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */; };
-		3063F69120ECF2D600A54496 /* UIApplication+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */; };
-		3063F69320ECF6E900A54496 /* UIColor+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */; };
-		3063F69520ECF7A800A54496 /* CGFloat+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */; };
-		308C7CE920F5EFC70088C89A /* Data+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308C7CE820F5EFC70088C89A /* Data+MTExtension.swift */; };
 		30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD120E54983005148F9 /* AppDelegate.swift */; };
 		30AEBCD420E54983005148F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD320E54983005148F9 /* ViewController.swift */; };
 		30AEBCD720E54983005148F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AEBCD520E54983005148F9 /* Main.storyboard */; };
@@ -23,21 +34,10 @@
 		30AEBCDC20E5498F005148F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AEBCDA20E5498F005148F9 /* LaunchScreen.storyboard */; };
 		30AEBCE720E5498F005148F9 /* MTToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCE620E5498F005148F9 /* MTToolDemoTests.swift */; };
 		30AEBCF220E5498F005148F9 /* MTToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCF120E5498F005148F9 /* MTToolDemoUITests.swift */; };
-		30AEBD0320E549B9005148F9 /* UIDevice+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */; };
 		30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0220E549B8005148F9 /* MTUniversal.swift */; };
-		30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0620E55154005148F9 /* MTDeviceModel.swift */; };
 		30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */; };
-		30D592F820EA697400C9491C /* UIImage+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592F720EA697400C9491C /* UIImage+MTExtension.swift */; };
-		30D592FC20EA777400C9491C /* UIAlertController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */; };
-		30D592FE20EA788200C9491C /* UIButton+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */; };
-		30D5930220EB4AD900C9491C /* NSObject+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930120EB4AD900C9491C /* NSObject+MTExtension.swift */; };
 		30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */; };
-		30D5930620EB4FC800C9491C /* Bool+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */; };
-		30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */; };
 		30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933A20EBBACB00C9491C /* MTStringTests.swift */; };
-		30D5933D20EC66ED00C9491C /* Timer+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */; };
-		30D5933F20EC694D00C9491C /* UIViewController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */; };
-		30D5934120EC74B400C9491C /* UIWindow+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */; };
 		30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,15 +59,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30203BCE20EA123C001CD813 /* String+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MTExtension.swift"; sourceTree = "<group>"; };
-		3053D57B20F60CF900F5FA66 /* CGRect+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+MTExtension.swift"; sourceTree = "<group>"; };
-		3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58120F6122700F5FA66 /* UIButton+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58320F6122700F5FA66 /* MTDeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTDeviceModel.swift; sourceTree = "<group>"; };
+		3053D58420F6122700F5FA66 /* UIImage+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58520F6122800F5FA66 /* UIView+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58620F6122800F5FA66 /* UIWindow+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58720F6122800F5FA66 /* UIAlertController+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D58820F6122800F5FA66 /* UIColor+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59320F6125000F5FA66 /* String+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59420F6125000F5FA66 /* CGRect+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59520F6125000F5FA66 /* Bool+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59620F6125000F5FA66 /* CGFloat+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59720F6125000F5FA66 /* Timer+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59820F6125000F5FA66 /* UserDefault+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefault+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59920F6125100F5FA66 /* Data+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Character+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserDefaultTests.swift; sourceTree = "<group>"; };
-		3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MTExtension.swift"; sourceTree = "<group>"; };
-		3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+MTExtension.swift"; sourceTree = "<group>"; };
-		3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MTExtension.swift"; sourceTree = "<group>"; };
-		3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+MTExtension.swift"; sourceTree = "<group>"; };
-		308C7CE820F5EFC70088C89A /* Data+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MTExtension.swift"; sourceTree = "<group>"; };
 		30AEBCCE20E54983005148F9 /* MTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCD120E54983005148F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30AEBCD320E54983005148F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,21 +92,10 @@
 		30AEBCED20E5498F005148F9 /* MTToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCF120E5498F005148F9 /* MTToolDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTToolDemoUITests.swift; sourceTree = "<group>"; };
 		30AEBCF320E5498F005148F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MTExtension.swift"; sourceTree = "<group>"; };
 		30AEBD0220E549B8005148F9 /* MTUniversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTUniversal.swift; sourceTree = "<group>"; };
-		30AEBD0620E55154005148F9 /* MTDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceModel.swift; sourceTree = "<group>"; };
 		30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDeviceTests.swift; sourceTree = "<group>"; };
-		30D592F720EA697400C9491C /* UIImage+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MTExtension.swift"; sourceTree = "<group>"; };
-		30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+MTExtension.swift"; sourceTree = "<group>"; };
-		30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+MTExtension.swift"; sourceTree = "<group>"; };
-		30D5930120EB4AD900C9491C /* NSObject+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+MTExtension.swift"; sourceTree = "<group>"; };
 		30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTNSObjectTests.swift; sourceTree = "<group>"; };
-		30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+MTExtension.swift"; sourceTree = "<group>"; };
-		30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+MTExtension.swift"; sourceTree = "<group>"; };
 		30D5933A20EBBACB00C9491C /* MTStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTStringTests.swift; sourceTree = "<group>"; };
-		30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+MTExtension.swift"; sourceTree = "<group>"; };
-		30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MTExtension.swift"; sourceTree = "<group>"; };
-		30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+MTExtension.swift"; sourceTree = "<group>"; };
 		30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUIViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3053D58220F6122700F5FA66 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3053D58320F6122700F5FA66 /* MTDeviceModel.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		30AEBCC520E54983005148F9 = {
 			isa = PBXGroup;
 			children = (
@@ -199,27 +207,19 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		30AEBD0520E550BD005148F9 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				30AEBD0620E55154005148F9 /* MTDeviceModel.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		30D592F920EA727B00C9491C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */,
-				30AEBD0120E549B8005148F9 /* UIDevice+MTExtension.swift */,
-				30D5934020EC74B400C9491C /* UIWindow+MTExtension.swift */,
-				30D5933E20EC694D00C9491C /* UIViewController+MTExtension.swift */,
-				30D592FB20EA777400C9491C /* UIAlertController+MTExtension.swift */,
-				3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */,
-				30D592F720EA697400C9491C /* UIImage+MTExtension.swift */,
-				30D592FD20EA788200C9491C /* UIButton+MTExtension.swift */,
-				3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */,
-				30AEBD0520E550BD005148F9 /* Helper */,
+				3053D58720F6122800F5FA66 /* UIAlertController+MTExtension.swift */,
+				3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */,
+				3053D58120F6122700F5FA66 /* UIButton+MTExtension.swift */,
+				3053D58820F6122800F5FA66 /* UIColor+MTExtension.swift */,
+				3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */,
+				3053D58420F6122700F5FA66 /* UIImage+MTExtension.swift */,
+				3053D58520F6122800F5FA66 /* UIView+MTExtension.swift */,
+				3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */,
+				3053D58620F6122800F5FA66 /* UIWindow+MTExtension.swift */,
+				3053D58220F6122700F5FA66 /* Helper */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -227,15 +227,15 @@
 		30D592FA20EA728400C9491C /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				30203BCE20EA123C001CD813 /* String+MTExtension.swift */,
-				30D5933820EBB0ED00C9491C /* Character+MTExtension.swift */,
-				30D5930120EB4AD900C9491C /* NSObject+MTExtension.swift */,
-				30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */,
-				30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */,
-				3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */,
-				308C7CE820F5EFC70088C89A /* Data+MTExtension.swift */,
-				3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */,
-				3053D57B20F60CF900F5FA66 /* CGRect+MTExtension.swift */,
+				3053D59520F6125000F5FA66 /* Bool+MTExtension.swift */,
+				3053D59620F6125000F5FA66 /* CGFloat+MTExtension.swift */,
+				3053D59420F6125000F5FA66 /* CGRect+MTExtension.swift */,
+				3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */,
+				3053D59920F6125100F5FA66 /* Data+MTExtension.swift */,
+				3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */,
+				3053D59320F6125000F5FA66 /* String+MTExtension.swift */,
+				3053D59720F6125000F5FA66 /* Timer+MTExtension.swift */,
+				3053D59820F6125000F5FA66 /* UserDefault+MTExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -371,19 +371,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30AEBD0320E549B9005148F9 /* UIDevice+MTExtension.swift in Sources */,
-				30D592FC20EA777400C9491C /* UIAlertController+MTExtension.swift in Sources */,
+				3053D5A420F6125100F5FA66 /* NSObject+MTExtension.swift in Sources */,
+				3053D58D20F6122800F5FA66 /* MTDeviceModel.swift in Sources */,
+				3053D58A20F6122800F5FA66 /* UIDevice+MTExtension.swift in Sources */,
+				3053D59F20F6125100F5FA66 /* CGFloat+MTExtension.swift in Sources */,
 				30AEBCD420E54983005148F9 /* ViewController.swift in Sources */,
-				30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */,
-				308C7CE920F5EFC70088C89A /* Data+MTExtension.swift in Sources */,
-				30D592FE20EA788200C9491C /* UIButton+MTExtension.swift in Sources */,
+				3053D5A220F6125100F5FA66 /* Data+MTExtension.swift in Sources */,
+				3053D59020F6122800F5FA66 /* UIWindow+MTExtension.swift in Sources */,
+				3053D59D20F6125100F5FA66 /* CGRect+MTExtension.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
+				3053D59E20F6125100F5FA66 /* Bool+MTExtension.swift in Sources */,
+				3053D58C20F6122800F5FA66 /* UIButton+MTExtension.swift in Sources */,
 				30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */,
-				30D592F820EA697400C9491C /* UIImage+MTExtension.swift in Sources */,
-				3063F68920ECCEBE00A54496 /* UserDefault+MTExtension.swift in Sources */,
-				30D5930220EB4AD900C9491C /* NSObject+MTExtension.swift in Sources */,
-				30203BCF20EA123C001CD813 /* String+MTExtension.swift in Sources */,
-				3053D57C20F60CF900F5FA66 /* CGRect+MTExtension.swift in Sources */,
+				3053D5A020F6125100F5FA66 /* Timer+MTExtension.swift in Sources */,
+				3053D59C20F6125100F5FA66 /* String+MTExtension.swift in Sources */,
+				3053D58F20F6122800F5FA66 /* UIView+MTExtension.swift in Sources */,
+				3053D59220F6122800F5FA66 /* UIColor+MTExtension.swift in Sources */,
+				3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */,
+				3053D59120F6122800F5FA66 /* UIAlertController+MTExtension.swift in Sources */,
+				3053D5A120F6125100F5FA66 /* UserDefault+MTExtension.swift in Sources */,
+				3053D5A320F6125100F5FA66 /* Character+MTExtension.swift in Sources */,
+				3053D58920F6122800F5FA66 /* UIViewController+MTExtension.swift in Sources */,
+				3053D58E20F6122800F5FA66 /* UIImage+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,20 +401,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */,
-				30D5933D20EC66ED00C9491C /* Timer+MTExtension.swift in Sources */,
 				30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */,
 				30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */,
 				30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */,
-				3063F68F20ECD13100A54496 /* UIView+MTExtension.swift in Sources */,
-				3063F69520ECF7A800A54496 /* CGFloat+MTExtension.swift in Sources */,
-				30D5933920EBB0ED00C9491C /* Character+MTExtension.swift in Sources */,
 				30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */,
-				30D5930620EB4FC800C9491C /* Bool+MTExtension.swift in Sources */,
 				30AEBCE720E5498F005148F9 /* MTToolDemoTests.swift in Sources */,
-				30D5933F20EC694D00C9491C /* UIViewController+MTExtension.swift in Sources */,
-				3063F69120ECF2D600A54496 /* UIApplication+MTExtension.swift in Sources */,
-				3063F69320ECF6E900A54496 /* UIColor+MTExtension.swift in Sources */,
-				30D5934120EC74B400C9491C /* UIWindow+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

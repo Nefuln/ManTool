@@ -128,6 +128,22 @@ extension UIImage {
 // MARK: - 尺寸相关
 extension UIImage {
     
+    /// 图片加圆角
+    ///
+    /// - Parameter corner: 圆角半径
+    /// - Returns: 加工后图片
+    public func corner(_ corner: CGFloat) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        let context = UIGraphicsGetCurrentContext()
+        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
+        context?.addPath(UIBezierPath(roundedRect: rect, cornerRadius: corner).cgPath)
+        context?.clip()
+        self.draw(in: rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img
+    }
+    
     /// 缩放图片
     ///
     /// - Parameters:
@@ -136,6 +152,14 @@ extension UIImage {
     /// - Returns: 缩放后的图片
     public func scaleTo(width: CGFloat, height: CGFloat) -> UIImage {
         return self.scaleTo(size: CGSize(width: width, height: height))
+    }
+
+    /// 等比例缩放
+    ///
+    /// - Parameter rate: 比例
+    /// - Returns: 缩放后的图片
+    public func scaleTo(rate: CGFloat) -> UIImage {
+        return self.scaleTo(size: CGSize(width: self.size.width * rate, height: self.size.height * rate))
     }
     
     /// 等比例缩放
@@ -174,14 +198,13 @@ extension UIImage {
     /// - Returns: 裁切过的图片
     public func croppedImage(_ bound: CGRect) -> UIImage? {
         var scaledBounds = bound
-        if self.size.width > bound.origin.x {
+        if self.size.width < bound.origin.x {
             scaledBounds.origin.x = self.size.width
         }
-        if self.size.height > bound.origin.y {
+        if self.size.height < bound.origin.y {
             scaledBounds.origin.y = self.size.height
         }
-        scaledBounds = scaledBounds.scale(rate: self.scale)
-        let imageRef = self.cgImage?.cropping(to: scaledBounds)
+        let imageRef = self.cgImage?.cropping(to: scaledBounds.scale(rate: self.scale))
         let croppedImage: UIImage = UIImage(cgImage: imageRef!, scale: self.scale, orientation: UIImageOrientation.up)
         return croppedImage
     }
@@ -202,5 +225,4 @@ extension UIImage {
         return (height * self.size.width) / self.size.height
     }
     
-
 }
