@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		30203BCF20EA123C001CD813 /* String+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30203BCE20EA123C001CD813 /* String+MTExtension.swift */; };
+		3053D57C20F60CF900F5FA66 /* CGRect+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57B20F60CF900F5FA66 /* CGRect+MTExtension.swift */; };
 		3063F68920ECCEBE00A54496 /* UserDefault+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */; };
 		3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */; };
 		3063F68F20ECD13100A54496 /* UIView+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */; };
 		3063F69120ECF2D600A54496 /* UIApplication+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */; };
 		3063F69320ECF6E900A54496 /* UIColor+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */; };
 		3063F69520ECF7A800A54496 /* CGFloat+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */; };
+		308C7CE920F5EFC70088C89A /* Data+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308C7CE820F5EFC70088C89A /* Data+MTExtension.swift */; };
 		30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD120E54983005148F9 /* AppDelegate.swift */; };
 		30AEBCD420E54983005148F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD320E54983005148F9 /* ViewController.swift */; };
 		30AEBCD720E54983005148F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AEBCD520E54983005148F9 /* Main.storyboard */; };
@@ -58,12 +60,14 @@
 
 /* Begin PBXFileReference section */
 		30203BCE20EA123C001CD813 /* String+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MTExtension.swift"; sourceTree = "<group>"; };
+		3053D57B20F60CF900F5FA66 /* CGRect+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserDefaultTests.swift; sourceTree = "<group>"; };
 		3063F68E20ECD13100A54496 /* UIView+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F69020ECF2D500A54496 /* UIApplication+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F69220ECF6E900A54496 /* UIColor+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+MTExtension.swift"; sourceTree = "<group>"; };
+		308C7CE820F5EFC70088C89A /* Data+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MTExtension.swift"; sourceTree = "<group>"; };
 		30AEBCCE20E54983005148F9 /* MTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCD120E54983005148F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30AEBCD320E54983005148F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,7 +233,9 @@
 				30D5930520EB4FC800C9491C /* Bool+MTExtension.swift */,
 				30D5933C20EC66ED00C9491C /* Timer+MTExtension.swift */,
 				3063F68820ECCEBE00A54496 /* UserDefault+MTExtension.swift */,
+				308C7CE820F5EFC70088C89A /* Data+MTExtension.swift */,
 				3063F69420ECF7A800A54496 /* CGFloat+MTExtension.swift */,
+				3053D57B20F60CF900F5FA66 /* CGRect+MTExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				30D592FC20EA777400C9491C /* UIAlertController+MTExtension.swift in Sources */,
 				30AEBCD420E54983005148F9 /* ViewController.swift in Sources */,
 				30AEBD0720E55154005148F9 /* MTDeviceModel.swift in Sources */,
+				308C7CE920F5EFC70088C89A /* Data+MTExtension.swift in Sources */,
 				30D592FE20EA788200C9491C /* UIButton+MTExtension.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
 				30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */,
@@ -376,6 +383,7 @@
 				3063F68920ECCEBE00A54496 /* UserDefault+MTExtension.swift in Sources */,
 				30D5930220EB4AD900C9491C /* NSObject+MTExtension.swift in Sources */,
 				30203BCF20EA123C001CD813 /* String+MTExtension.swift in Sources */,
+				3053D57C20F60CF900F5FA66 /* CGRect+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

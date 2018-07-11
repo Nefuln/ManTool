@@ -8,23 +8,25 @@ import Foundation
 
 extension Character {
     
+    /// 转化为String
     public var toString: String { return String(self) }
     
+    /// 转化为Int
     public var toInt: Int? { return Int(String(self)) }
     
-    /// EZSE: Convert the character to lowercase
+    /// 小写
     public var lowercased: Character {
         let s = String(self).lowercased()
         return s[s.startIndex]
     }
     
-    /// EZSE: Convert the character to uppercase
+    /// 大写
     public var uppercased: Character {
         let s = String(self).uppercased()
         return s[s.startIndex]
     }
     
-    /// EZSE : Checks if character is emoji
+    /// 是否是表情符号
     var isEmoji: Bool {
         return String(self).includesEmoji()
     }

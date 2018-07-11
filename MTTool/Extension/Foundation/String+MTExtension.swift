@@ -89,21 +89,12 @@ extension String {
     public var toFloat: Float? {
         return isNumber ? number?.floatValue : nil
     }
-    
-    /// EZSE: Converts String to Bool
-//    public func toBool() -> Bool? {
-//        let trimmedString = trimmed().lowercased()
-//        if trimmedString == "true" || trimmedString == "false" {
-//            return (trimmedString as NSString).boolValue
-//        }
-//        return nil
-//    }
 
 }
 
 // MARK: - 64位字符串
 extension String {
-    init ? (base64: String) {
+    init?(base64: String) {
         let pad = String(repeating: "=", count: base64.length % 4)
         let base64Padded = base64 + pad
         if let decodedData = Data(base64Encoded: base64Padded, options: NSData.Base64DecodingOptions(rawValue: 0)), let decodedString = NSString(data: decodedData, encoding: String.Encoding.utf8.rawValue) {
