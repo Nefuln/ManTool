@@ -132,11 +132,11 @@ extension UIImage {
     ///
     /// - Parameter corner: 圆角半径
     /// - Returns: 加工后图片
-    public func corner(_ corner: CGFloat) -> UIImage? {
+    public func corner(_ corner: CGFloat, byRoundingCorners: UIRectCorner = UIRectCorner.allCorners) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
         let context = UIGraphicsGetCurrentContext()
         let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
-        context?.addPath(UIBezierPath(roundedRect: rect, cornerRadius: corner).cgPath)
+        context?.addPath(UIBezierPath(roundedRect: rect, byRoundingCorners: byRoundingCorners, cornerRadii: CGSize(width: corner, height: corner)).cgPath)
         context?.clip()
         self.draw(in: rect)
         let img = UIGraphicsGetImageFromCurrentImageContext()

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let imgView1 = UIImageView(frame: CGRect(x: 100, y: 30, width: 100, height: 100))
-        imgView1.image = UIImage(named: "myYellowSearch")?.corner(5)
+        imgView1.image = UIImage(named: "myYellowSearch")?.corner(10, byRoundingCorners: [UIRectCorner.topLeft, UIRectCorner.topRight])
         imgView1.contentMode = .center
         
         let imgView2 = UIImageView(frame: CGRect(x: 100, y: 150, width: 100, height: 100))
