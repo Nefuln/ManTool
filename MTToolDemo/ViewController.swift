@@ -13,20 +13,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imgView1 = UIImageView(frame: CGRect(x: 100, y: 30, width: 100, height: 100))
-        imgView1.image = UIImage(named: "myYellowSearch")?.corner(10, byRoundingCorners: [UIRectCorner.topLeft, UIRectCorner.topRight])
-        imgView1.contentMode = .center
+        let str1 = "💕 ﻩ ️ ab\nc"
+        let str2 = "😂️😂️"
+        let str3 = "\(str1)：\(str2)"
         
-        let imgView2 = UIImageView(frame: CGRect(x: 100, y: 150, width: 100, height: 100))
-        imgView2.image = UIImage(named: "myYellowSearch")?.scaleTo(rate: 0.5)
-        imgView2.contentMode = .center
-
-        let imgView3 = UIImageView(frame: CGRect(x: 100, y: 300, width: 100, height: 100))
-        imgView3.image = UIImage(named: "myYellowSearch")?.croppedImage(CGRect(x: 10, y: 10, width: 20, height: 20))
-        imgView3.contentMode = .center
-
-        self.view.addSubviews(imgView1, imgView2, imgView3)
+        let name = "💕 ﻩ ️ 添奶瓶"
+        let content = "所有主流浏览器支持"
+        let htmlStr: String = "<font size='3' color='#0f0ff0'>\(name)：</font><font size='5' color='#7b7b7c'>\(content)</font>"
+        let lb = UILabel(frame: CGRect(x: 20, y: 100, width: 300, height: 100))
+        lb.backgroundColor = UIColor.purple
+        lb.textColor = UIColor.white
+//        let attrStr1 = try! NSAttributedString(data: htmlStr.data(using: String.Encoding.unicode, allowLossyConversion: true)!, options: [.documentType : NSAttributedString.DocumentType.html, .characterEncoding : String.Encoding.utf8.rawValue], documentAttributes: nil)
+//        let mAttrStr = NSMutableAttributedString(attributedString: attrStr1)
+//        mAttrStr.append(NSAttributedString(string: "222222222222"))
+        
+        lb.attributedText = htmlStr.htmlAttributedString
+        
+        lb.backgroundColor = UIColor.yellow
+        lb.numberOfLines = 0
+        
+        self.view.addSubview(lb)
     }
+    
 
 }
 
