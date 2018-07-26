@@ -31,6 +31,11 @@ extension UIDevice {
         return self.deviceType == .iPhone
     }
     
+    /// 是否是模拟器
+    var isSimulator: Bool {
+        return self.deviceType == .Simulator
+    }
+    
     /// 手机型号：不是手机时返回None
     var iPhoneType: MTPhoneDeviceType {
         return self.isPhone ? (self.deviceModel as! MTPhoneModel).phoneType : .None
@@ -46,6 +51,80 @@ extension UIDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         return identifier
+    }
+    
+    /// 电池电量
+    var MT_batteryQuantity: Float {
+        self.isBatteryMonitoringEnabled = true
+        let quantity = self.batteryLevel
+        self.isBatteryMonitoringEnabled = false
+        return quantity
+    }
+    
+    /// 电池状态
+    var MT_batteryState: UIDeviceBatteryState {
+        self.isBatteryMonitoringEnabled = true
+        let state = self.batteryState
+        self.isBatteryMonitoringEnabled = false
+        return state
+    }
+}
+
+// MARK: - 设备运行内存
+extension UIDevice {
+    /// 系统物理内存： 单位为b
+    var totalMemorySize: UInt64 {
+        return ProcessInfo.processInfo.physicalMemory
+    }
+
+    /// 获取当前可用内存，单位为b
+
+    
+    // 获取当前进程占用内存，单位为b
+    var useMemory: UInt64? {
+        var info = mach_task_basic_info()
+        var count = mach_msg_type_number_t(MemoryLayout<mach_task_basic_info>.size)/4
+        
+        let kerr: kern_return_t = withUnsafeMutablePointer(to: &info) {
+            $0.withMemoryRebound(to: integer_t.self, capacity: 1) {
+                task_info(mach_task_self_,
+                          task_flavor_t(MACH_TASK_BASIC_INFO),
+                          $0,
+                          &count)
+            }
+        }
+        
+        if kerr == KERN_SUCCESS {
+            return info.resident_size
+        }
+        return nil
+    }
+}
+
+extension UIDevice {
+    /// 磁盘总大小, 单位：b
+    var totalDiskSize: Int64 {
+        var fs = blankof(type: statfs.self)
+        if statfs("/var",&fs) >= 0{
+            return Int64(UInt64(fs.f_bsize) * fs.f_blocks)
+        }
+        return -1
+    }
+    
+    /// 磁盘可用大小, 单位：b
+    var availableDiskSize: Int64 {
+        var fs = blankof(type: statfs.self)
+        if statfs("/var",&fs) >= 0{
+            return Int64(UInt64(fs.f_bsize) * fs.f_bavail)
+        }
+        return -1
+    }
+    
+    private func blankof<T>(type:T.Type) -> T {
+        let ptr = UnsafeMutablePointer<T>.allocate(capacity: MemoryLayout<T>.size)
+        let val = ptr.pointee
+        ptr.deinitialize(count: 1)
+        return val
     }
 }
 

@@ -35,28 +35,28 @@ extension UIColor {
     }
     
     /// 红色色值
-    public var red: Int {
+    public var redValue: Int {
         var r: CGFloat = 0
         getRed(&r, green: nil, blue: nil, alpha: nil)
         return Int(r * 255)
     }
     
     /// 绿色色值
-    public var green: Int {
+    public var greenValue: Int {
         var g: CGFloat = 0
         getRed(nil, green: &g, blue: nil, alpha: nil)
         return Int(g * 255)
     }
     
     /// 蓝色色值
-    public var blue: Int {
+    public var blueValue: Int {
         var b: CGFloat = 0
         getRed(nil, green: nil, blue: &b, alpha: nil)
         return Int(b * 255)
     }
     
     /// 透明度
-    public var alpha: CGFloat {
+    public var alphaValue: CGFloat {
         var a: CGFloat = 0
         getRed(nil, green: nil, blue: nil, alpha: &a)
         return a

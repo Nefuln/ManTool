@@ -14,7 +14,7 @@ extension String {
     public var toNSString: NSString { return self as NSString }
     
     /// html字符串的多属性字符串，可直接赋值给控件，e.g: UILabel().attributedText = "exampleHtmlStr".htmlAttributedString
-    /// 注意：使用html多属性字符串可避免字符串里有特殊字符（如阿拉伯字母）造成的显示错乱
+    /// 注意：使用html多属性字符串可有效但不能完全避免字符串里有特殊字符（如阿拉伯字母）造成的显示错乱
     public var htmlAttributedString: NSAttributedString? {
         do {
             return try NSAttributedString(data: self.data(using: String.Encoding.unicode, allowLossyConversion: true)!, options: [.documentType : NSAttributedString.DocumentType.html, .characterEncoding : String.Encoding.utf8.rawValue], documentAttributes: nil)
