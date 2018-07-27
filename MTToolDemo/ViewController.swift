@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.addBtns()
+    }
+    
+    
+    private func addAttributedLable() {
         let name = "💕 ﻩ ️ 添奶瓶"
         let content = "所有主流浏览器支持"
         let htmlStr: String = "<font size='3' color='#0f0ff0'>\(name)：</font><font size='5' color='#7b7b7c'>\(content)</font>"
@@ -32,5 +36,37 @@ class ViewController: UIViewController {
         }
     }
 
+    private func addBtns() {
+        let btn1 = UIButton(type: UIButtonType.custom)
+        btn1.setTitleColor(UIColor.red, for: UIControlState.normal)
+        btn1.setTitle("测试1", for: UIControlState.normal)
+        btn1.frame = CGRect(x: 20, y: 50, width: 100, height: 50)
+        btn1.setImage(UIImage(named: "myYellowSearch"), for: UIControlState.normal)
+        btn1.layoutButton(style: MTButtonEdgeInsetsStyle.Top, space: 5)
+        
+        let btn2 = UIButton(type: UIButtonType.custom)
+        btn2.setTitleColor(UIColor.red, for: UIControlState.normal)
+        btn2.setTitle("测试2", for: UIControlState.normal)
+        btn2.frame = CGRect(x: 20, y: 110, width: 100, height: 50)
+        btn2.setImage(UIImage(named: "myYellowSearch"), for: UIControlState.normal)
+        btn2.layoutButton()
+
+        let btn3 = UIButton(type: UIButtonType.custom)
+        btn3.setTitleColor(UIColor.red, for: UIControlState.normal)
+        btn3.setTitle("测试3", for: UIControlState.normal)
+        btn3.frame = CGRect(x: 20, y: 170, width: 100, height: 50)
+        btn3.setImage(UIImage(named: "myYellowSearch"), for: UIControlState.normal)
+        btn3.layoutButton(style: .Right, space: 10)
+
+        let btn4 = UIButton(type: UIButtonType.custom)
+        btn4.setTitleColor(UIColor.red, for: UIControlState.normal)
+        btn4.setTitle("测试4", for: UIControlState.normal)
+        btn4.frame = CGRect(x: 20, y: 230, width: 100, height: 50)
+        btn4.setImage(UIImage(named: "myYellowSearch"), for: UIControlState.normal)
+        btn4.layoutButton(style: .Bottom, space: 40)
+
+        self.view.addSubviews(btn1, btn2, btn3, btn4)
+    }
 }
+
 

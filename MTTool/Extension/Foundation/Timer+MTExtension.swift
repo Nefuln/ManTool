@@ -14,6 +14,7 @@ extension Timer {
     ///   - seconds: 间隔时间
     ///   - handler: 执行回调
     /// - Returns: 定时器对象
+    @discardableResult // 不用返回值不报警告⚠️
     public static func runThisEvery(seconds: TimeInterval, handler: @escaping (Timer?) -> Void) -> Timer {
         let fireDate = CFAbsoluteTimeGetCurrent()
         let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, seconds, 0, 0, handler)

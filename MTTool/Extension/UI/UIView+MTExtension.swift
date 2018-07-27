@@ -69,3 +69,61 @@ extension UIView {
 //        self.layer.transform = transform
 //    }
 }
+
+// MARK: - Frame
+extension UIView {
+    
+    /// == origin.x
+    public var x: CGFloat {
+        set {
+            self.frame.x = newValue
+        }
+        get {
+            return self.frame.x
+        }
+    }
+    
+    /// == origin.y
+    public var y: CGFloat {
+        set {
+            self.frame.y = newValue
+        }
+        get {
+            return self.frame.y
+        }
+    }
+    
+    /// == size.width
+    public var width: CGFloat {
+        set {
+            self.frame.width = newValue
+        }
+        get {
+            return self.frame.width
+        }
+    }
+    
+    /// == size.height
+    public var height: CGFloat {
+        set {
+            self.frame.height = newValue
+        }
+        get {
+            return self.frame.height
+        }
+    }
+    
+    /// 周长
+    public var girth: CGFloat {
+        return (self.width + self.height) * 2
+    }
+    
+    /// 面积
+    public var area: CGFloat {
+        return self.width * self.height
+    }
+    
+    public func scaleSize(rate: CGFloat) -> CGSize {
+        return CGSize(width: self.width * rate, height: self.height * rate)
+    }
+}
