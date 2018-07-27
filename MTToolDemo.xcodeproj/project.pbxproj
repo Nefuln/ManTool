@@ -39,6 +39,7 @@
 		30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */; };
 		30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933A20EBBACB00C9491C /* MTStringTests.swift */; };
 		30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */; };
+		30FAF9E4210AF97800B34170 /* UILable+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTNSObjectTests.swift; sourceTree = "<group>"; };
 		30D5933A20EBBACB00C9491C /* MTStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTStringTests.swift; sourceTree = "<group>"; };
 		30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUIViewControllerTests.swift; sourceTree = "<group>"; };
+		30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+MTExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,11 +214,12 @@
 			children = (
 				3053D58720F6122800F5FA66 /* UIAlertController+MTExtension.swift */,
 				3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */,
-				3053D58120F6122700F5FA66 /* UIButton+MTExtension.swift */,
 				3053D58820F6122800F5FA66 /* UIColor+MTExtension.swift */,
 				3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */,
-				3053D58420F6122700F5FA66 /* UIImage+MTExtension.swift */,
 				3053D58520F6122800F5FA66 /* UIView+MTExtension.swift */,
+				3053D58120F6122700F5FA66 /* UIButton+MTExtension.swift */,
+				3053D58420F6122700F5FA66 /* UIImage+MTExtension.swift */,
+				30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */,
 				3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */,
 				3053D58620F6122800F5FA66 /* UIWindow+MTExtension.swift */,
 				3053D58220F6122700F5FA66 /* Helper */,
@@ -374,6 +377,7 @@
 				3053D5A420F6125100F5FA66 /* NSObject+MTExtension.swift in Sources */,
 				3053D58D20F6122800F5FA66 /* MTDeviceModel.swift in Sources */,
 				3053D58A20F6122800F5FA66 /* UIDevice+MTExtension.swift in Sources */,
+				30FAF9E4210AF97800B34170 /* UILable+MTExtension.swift in Sources */,
 				3053D59F20F6125100F5FA66 /* CGFloat+MTExtension.swift in Sources */,
 				30AEBCD420E54983005148F9 /* ViewController.swift in Sources */,
 				3053D5A220F6125100F5FA66 /* Data+MTExtension.swift in Sources */,

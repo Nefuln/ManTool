@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addBtns()
+//        self.addBtns()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     
     
@@ -67,6 +70,8 @@ class ViewController: UIViewController {
 
         self.view.addSubviews(btn1, btn2, btn3, btn4)
     }
+
+
 }
 
 
