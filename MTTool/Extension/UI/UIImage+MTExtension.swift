@@ -76,14 +76,14 @@ extension UIImage {
         self.init(data: data)
     }
 
+    /// 将UIView转换为UIImage
+    ///
+    /// - Parameter fromView: 需要转化的UIView
+    /// - Returns: 生成对应的UIImage
     public static func image(fromView: UIView) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(fromView.bounds.size, fromView.isOpaque, 0.0)
-        defer {
-            UIGraphicsEndImageContext()
-        }
-        guard let context = UIGraphicsGetCurrentContext() else {
-            return nil
-        }
+        defer { UIGraphicsEndImageContext()}
+        guard let context = UIGraphicsGetCurrentContext() else { return nil }
         fromView.layer.render(in: context)
         let img = UIGraphicsGetImageFromCurrentImageContext()
         return img
@@ -96,7 +96,6 @@ extension UIImage {
     public func compressImage(rate: CGFloat) -> Data? {
         return UIImageJPEGRepresentation(self, rate)
     }
-    
 
 }
 
