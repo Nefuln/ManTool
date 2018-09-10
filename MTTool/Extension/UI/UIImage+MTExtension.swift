@@ -75,6 +75,19 @@ extension UIImage {
         }
         self.init(data: data)
     }
+
+    public static func image(fromView: UIView) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(fromView.bounds.size, fromView.isOpaque, 0.0)
+        defer {
+            UIGraphicsEndImageContext()
+        }
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        fromView.layer.render(in: context)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        return img
+    }
     
     /// 压缩图片
     ///

@@ -40,6 +40,7 @@
 		30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5933A20EBBACB00C9491C /* MTStringTests.swift */; };
 		30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */; };
 		30FAF9E4210AF97800B34170 /* UILable+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */; };
+		30FAF9E6210B017C00B34170 /* Int+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		30D5933A20EBBACB00C9491C /* MTStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTStringTests.swift; sourceTree = "<group>"; };
 		30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUIViewControllerTests.swift; sourceTree = "<group>"; };
 		30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+MTExtension.swift"; sourceTree = "<group>"; };
+		30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+MTExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				3053D59520F6125000F5FA66 /* Bool+MTExtension.swift */,
 				3053D59620F6125000F5FA66 /* CGFloat+MTExtension.swift */,
 				3053D59420F6125000F5FA66 /* CGRect+MTExtension.swift */,
+				30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */,
 				3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */,
 				3053D59920F6125100F5FA66 /* Data+MTExtension.swift */,
 				3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */,
@@ -394,6 +397,7 @@
 				3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */,
 				3053D59120F6122800F5FA66 /* UIAlertController+MTExtension.swift in Sources */,
 				3053D5A120F6125100F5FA66 /* UserDefault+MTExtension.swift in Sources */,
+				30FAF9E6210B017C00B34170 /* Int+MTExtension.swift in Sources */,
 				3053D5A320F6125100F5FA66 /* Character+MTExtension.swift in Sources */,
 				3053D58920F6122800F5FA66 /* UIViewController+MTExtension.swift in Sources */,
 				3053D58E20F6122800F5FA66 /* UIImage+MTExtension.swift in Sources */,

@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.addBtns()
+        self.convertViewToImage()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.convertViewToImage()
     }
     
     
@@ -71,7 +73,21 @@ class ViewController: UIViewController {
         self.view.addSubviews(btn1, btn2, btn3, btn4)
     }
 
-
+    private func convertViewToImage() {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        view.backgroundColor = UIColor.red
+        let subview = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        subview.backgroundColor = UIColor.yellow
+        view.addSubview(subview)
+        let img = UIImage.image(fromView: view)
+        
+        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        imgView.backgroundColor = UIColor.gray
+        imgView.contentMode = .scaleAspectFit
+        imgView.center = self.view.center
+        imgView.image = img
+        self.view.addSubview(imgView)
+    }
 }
 
 
