@@ -58,6 +58,10 @@ extension CGRect {
         return self.width * self.height
     }
     
+    /// 等比例缩放
+    ///
+    /// - Parameter rate: 缩放比例
+    /// - Returns: 缩放过的数据
     public func scale(rate: CGFloat) -> CGRect {
         return CGRect(x: self.x * rate, y: self.y * rate, width: self.width * rate, height: self.height * rate)
     }

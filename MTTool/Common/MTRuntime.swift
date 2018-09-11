@@ -106,14 +106,6 @@ public func MT_getPropertyList(cls: AnyClass?) -> (count: UInt32, property: [Str
     var propertys = [String]()
     for i in 0..<count {
         let property = propertyList[Int(i)]
-        var pACount: UInt32 = 0
-        let pa = property_copyAttributeList(property, &pACount)
-        for j in 0..<pACount {
-            let pAttr = pa![Int(j)]
-            let name = String(cString: pAttr.name)
-            let value = String(cString: pAttr.value)
-            debugPrint(name, value)
-        }
         let p = property_getName(property)
         propertys.append(String(cString: p))
     }

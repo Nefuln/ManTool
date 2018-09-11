@@ -54,3 +54,24 @@ extension UIButton {
         self.imageEdgeInsets = imageEdgeInsets
     }
 }
+
+// MARK: - 按钮的点击事件回调block
+extension UIButton {
+    private struct MTButtonAssociationTapBlockKey {
+        static var tapBlockKey = "MTButton_TapBlock"
+    }
+    
+    var tapBlock: ((_ btn: UIButton)->Void)? {
+        get {
+            return self.getAssociatedObject(key: &MTButtonAssociationTapBlockKey.tapBlockKey)
+        }
+        set {
+            self.setAssociatedObject(key: &MTButtonAssociationTapBlockKey.tapBlockKey, value: newValue, type: .Copy)
+            self.addTarget(self, action: #selector(UIButton.handleTapAction(_:)), for: UIControlEvents.touchUpInside)
+        }
+    }
+    
+    @objc private func handleTapAction(_ btn: UIButton) {
+        self.tapBlock?(btn)
+    }
+}

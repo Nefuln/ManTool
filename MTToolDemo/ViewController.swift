@@ -14,14 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        self.addBtns()
 //        self.convertViewToImage()
+        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        btn.setTitle("测试", for: UIControlState.normal)
+        btn.setTitleColor(UIColor.blue, for: UIControlState.normal)
+        btn.center = self.view.center
+        btn.tapBlock = { (b) in
+            debugPrint(b)
+        }
+        self.view.addSubview(btn)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.convertViewToImage()
-//        if "10.2".compare("1.0.3", options: String.CompareOptions.numeric) == .orderedDescending {
-//            debugPrint("这是新版本")
-//        }
-        debugPrint(MTAfterVersion("1.0.3", "10.2"))
     }
     
     
