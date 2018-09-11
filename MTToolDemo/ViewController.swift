@@ -9,23 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    fileprivate let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
 
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.addBtns()
 //        self.convertViewToImage()
-        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         btn.setTitle("测试", for: UIControlState.normal)
         btn.setTitleColor(UIColor.blue, for: UIControlState.normal)
         btn.center = self.view.center
         btn.tapBlock = { (b) in
-            debugPrint(b)
+            debugPrint(Date().timeIntervalSince1970)
         }
+        btn.allowRepeat = true
+        btn.repeatClickInterval = 1
         self.view.addSubview(btn)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.convertViewToImage()
+        btn.allowRepeat = !btn.allowRepeat
     }
     
     

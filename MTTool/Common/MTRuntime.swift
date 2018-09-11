@@ -125,3 +125,17 @@ public func MT_getFuncList(cls: AnyClass?) {
         let f = method_getName(funcList[Int(i)])
     }
 }
+
+/// 获取指定类的指定实例方法
+///
+/// - Parameters:
+///   - cls: 类
+///   - name: 方法
+/// - Returns: 方法
+public func MT_getInstanceMethod(cls: AnyClass?, name: Selector) -> Method? {
+    return class_getInstanceMethod(cls, name)
+}
+
+public func MT_exchangeMethodImplementations(origin: Method, destination: Method) {
+    method_exchangeImplementations(origin, destination)
+}

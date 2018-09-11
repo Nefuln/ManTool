@@ -61,7 +61,7 @@ extension UIButton {
         static var tapBlockKey = "MTButton_TapBlock"
     }
     
-    var tapBlock: ((_ btn: UIButton)->Void)? {
+    public var tapBlock: ((_ btn: UIButton)->Void)? {
         get {
             return self.getAssociatedObject(key: &MTButtonAssociationTapBlockKey.tapBlockKey)
         }
@@ -73,5 +73,60 @@ extension UIButton {
     
     @objc private func handleTapAction(_ btn: UIButton) {
         self.tapBlock?(btn)
+    }
+}
+
+// MARK: - 防止重复点击
+extension UIButton {
+    private struct MTButtonRepeatedClicksKeys {
+        static var allowRepeat = "MTButton_AllowRepeat"
+        static var lastTapTime = "MTButton_LastTapTime"
+        static var repeatClickInterval = "MTButton_LastTapTime"
+    }
+    
+    /// 是否允许重复点击，默认为允许
+    public var allowRepeat: Bool {
+        get {
+            return self.getAssociatedObject(key: &MTButtonRepeatedClicksKeys.allowRepeat, defaultValue: true)!
+        }
+        set {
+            if self.allowRepeat == newValue {
+                return
+            }
+            self.setAssociatedObject(key: &MTButtonRepeatedClicksKeys.allowRepeat, value: newValue, type: MTAssociationType.Retain)
+            guard let originMethod = self.getInstanceMethod(#selector(UIButton.sendAction(_:to:for:))) else { return }
+            guard let destinationMethod = self.getInstanceMethod(#selector(UIButton.MT_sendAction(_:to:for:))) else { return }
+            MT_exchangeMethodImplementations(origin: originMethod, destination:destinationMethod)
+        }
+    }
+    
+    /// 两次点击之间的间隔时间，默认为0.5s
+    public var repeatClickInterval: TimeInterval {
+        get {
+            return self.getAssociatedObject(key: &MTButtonRepeatedClicksKeys.repeatClickInterval, defaultValue: 0.5)!
+        }
+        set {
+            self.setAssociatedObject(key: &MTButtonRepeatedClicksKeys.repeatClickInterval, value: newValue, type: MTAssociationType.Retain)
+        }
+    }
+    
+    /// 记录上次点击时间
+    private var lastTapTime: TimeInterval {
+        get {
+            return self.getAssociatedObject(key: &MTButtonRepeatedClicksKeys.lastTapTime, defaultValue: 0)!
+        }
+        set {
+            self.setAssociatedObject(key: &MTButtonRepeatedClicksKeys.lastTapTime, value: newValue, type: MTAssociationType.Retain)
+        }
+    }
+    
+    /// 使用运行时监听按钮点击事件，并做响应的防止重复点击的处理
+    @objc private func MT_sendAction(_ action: Selector, to target: AnyObject?, for event: UIEvent?) {
+        let currentTime = Date().timeIntervalSince1970
+        if currentTime - self.lastTapTime < self.repeatClickInterval {
+            return
+        }
+        self.lastTapTime = currentTime
+        self.MT_sendAction(action, to: target, for: event)
     }
 }

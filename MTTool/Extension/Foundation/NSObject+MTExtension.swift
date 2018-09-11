@@ -43,7 +43,7 @@ extension NSObject {
     public func setAssociatedObject<T>(key: UnsafeRawPointer, value: T?, type: MTAssociationType = .Strong) {
         var policy = objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
         switch type {
-        case .Weak, .Retain:
+        case .Weak:
             policy = .OBJC_ASSOCIATION_ASSIGN
         case .Copy:
             policy = .OBJC_ASSOCIATION_COPY_NONATOMIC
@@ -67,3 +67,8 @@ extension NSObject {
     }
 }
 
+extension NSObject {
+    public func getInstanceMethod(_ name: Selector) -> Method? {
+        return MT_getInstanceMethod(cls: MT_classFromObject(self), name: name)
+    }
+}
