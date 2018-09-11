@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    fileprivate let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+    fileprivate let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         }
         btn.allowRepeat = true
         btn.repeatClickInterval = 1
+        btn.minClickArea = CGSize(width: 100, height: 50)
         self.view.addSubview(btn)
     }
     

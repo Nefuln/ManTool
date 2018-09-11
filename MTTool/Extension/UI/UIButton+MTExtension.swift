@@ -81,7 +81,7 @@ extension UIButton {
     private struct MTButtonRepeatedClicksKeys {
         static var allowRepeat = "MTButton_AllowRepeat"
         static var lastTapTime = "MTButton_LastTapTime"
-        static var repeatClickInterval = "MTButton_LastTapTime"
+        static var repeatClickInterval = "MTButton_repeatClickInterval"
     }
     
     /// 是否允许重复点击，默认为允许
@@ -128,5 +128,29 @@ extension UIButton {
         }
         self.lastTapTime = currentTime
         self.MT_sendAction(action, to: target, for: event)
+    }
+}
+
+extension UIButton {
+    private struct MTButtonAreaKeys {
+        static var minClickArea = "MTButton_ClickArea"
+    }
+    
+    public var minClickArea: CGSize? {
+        get {
+            return self.getAssociatedObject(key: &MTButtonAreaKeys.minClickArea)
+        }
+        set {
+            self.setAssociatedObject(key: &MTButtonAreaKeys.minClickArea, value: newValue)
+        }
+    }
+    
+    open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        guard let tmpSize = self.minClickArea else {
+            return super.point(inside: point, with: event)
+        }
+        let realSize = self.bounds
+        let canClickArea: CGRect = realSize.insetBy(dx: -max(tmpSize.width-realSize.size.width, 0), dy: -max(tmpSize.height-realSize.size.height, 0))
+        return canClickArea.contains(point)
     }
 }
