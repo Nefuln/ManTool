@@ -120,7 +120,7 @@ extension UIButton {
         }
     }
     
-    /// 使用运行时监听按钮点击事件，并做响应的防止重复点击的处理
+    /// 使用运行时监听按钮点击事件，并做相应的防止重复点击的处理
     @objc private func MT_sendAction(_ action: Selector, to target: AnyObject?, for event: UIEvent?) {
         let currentTime = Date().timeIntervalSince1970
         if currentTime - self.lastTapTime < self.repeatClickInterval {
@@ -131,6 +131,7 @@ extension UIButton {
     }
 }
 
+// MARK: - 增大点击区域
 extension UIButton {
     private struct MTButtonAreaKeys {
         static var minClickArea = "MTButton_ClickArea"
