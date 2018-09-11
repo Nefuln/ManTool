@@ -141,6 +141,7 @@
 		309AB0FC21480B4D002EE4D3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30AEBD0220E549B8005148F9 /* MTUniversal.swift */,
 				309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */,
 			);
 			path = Common;
@@ -206,7 +207,7 @@
 		30AEBCFF20E549B8005148F9 /* MTTool */ = {
 			isa = PBXGroup;
 			children = (
-				30AEBD0220E549B8005148F9 /* MTUniversal.swift */,
+				309AB0FC21480B4D002EE4D3 /* Common */,
 				30AEBD0020E549B8005148F9 /* Extension */,
 			);
 			path = MTTool;
@@ -215,7 +216,6 @@
 		30AEBD0020E549B8005148F9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				309AB0FC21480B4D002EE4D3 /* Common */,
 				30D592FA20EA728400C9491C /* Foundation */,
 				30D592F920EA727B00C9491C /* UI */,
 			);
