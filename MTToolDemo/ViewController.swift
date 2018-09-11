@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         btn.tapBlock = { (b) in
             debugPrint(Date().timeIntervalSince1970)
         }
-        btn.allowRepeat = true
+        btn.allowRepeat = false
         btn.repeatClickInterval = 1
         btn.minClickArea = CGSize(width: 100, height: 50)
         self.view.addSubview(btn)
@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.convertViewToImage()
-        btn.allowRepeat = !btn.allowRepeat
+//        btn.allowRepeat = !btn.allowRepeat
+        debugPrint(MT_classNameFromObject(self))
     }
     
     
