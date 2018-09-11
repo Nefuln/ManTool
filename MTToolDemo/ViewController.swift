@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.addBtns()
-        self.convertViewToImage()
+//        self.convertViewToImage()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.convertViewToImage()
+//        self.convertViewToImage()
+//        if "10.2".compare("1.0.3", options: String.CompareOptions.numeric) == .orderedDescending {
+//            debugPrint("这是新版本")
+//        }
+        debugPrint(MTAfterVersion("1.0.3", "10.2"))
     }
     
     

@@ -127,3 +127,9 @@ extension UIView {
         return CGSize(width: self.width * rate, height: self.height * rate)
     }
 }
+
+extension UIView {
+    var convertToImage: UIImage? {
+        return UIImage.image(fromView: self)
+    }
+}
