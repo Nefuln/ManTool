@@ -7,7 +7,7 @@ import UIKit
 
 extension UIAlertController {
     
-    public static func mt_alertForTitle(title: String?, message: String?, preferredStyle: UIAlertControllerStyle = .alert, actions: UIAlertAction...) {
+    public static func alertForTitle(title: String?, message: String?, preferredStyle: UIAlertControllerStyle = .alert, actions: UIAlertAction...) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
         actions.forEach({ alert.addAction($0) })
         alert.show()

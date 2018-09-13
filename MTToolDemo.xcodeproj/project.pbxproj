@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303F1D65214A4A8A009FE159 /* MTTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F1D64214A4A8A009FE159 /* MTTiming.swift */; };
 		3053D58920F6122800F5FA66 /* UIViewController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */; };
 		3053D58A20F6122800F5FA66 /* UIDevice+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */; };
 		3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		303F1D64214A4A8A009FE159 /* MTTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTTiming.swift; sourceTree = "<group>"; };
 		3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MTExtension.swift"; sourceTree = "<group>"; };
 		3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MTExtension.swift"; sourceTree = "<group>"; };
 		3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+MTExtension.swift"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				30AEBD0220E549B8005148F9 /* MTUniversal.swift */,
 				309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */,
+				303F1D64214A4A8A009FE159 /* MTTiming.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				3053D5A020F6125100F5FA66 /* Timer+MTExtension.swift in Sources */,
 				3053D59C20F6125100F5FA66 /* String+MTExtension.swift in Sources */,
 				3053D58F20F6122800F5FA66 /* UIView+MTExtension.swift in Sources */,
+				303F1D65214A4A8A009FE159 /* MTTiming.swift in Sources */,
 				3053D59220F6122800F5FA66 /* UIColor+MTExtension.swift in Sources */,
 				3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */,
 				3053D59120F6122800F5FA66 /* UIAlertController+MTExtension.swift in Sources */,
