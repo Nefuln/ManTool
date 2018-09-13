@@ -25,6 +25,18 @@ extension Date {
         dateFormatter.dateFormat = formatter
         return dateFormatter.string(from: self)
     }
+    
+    /// 根据日期字符串和字符串格式生成日期
+    ///
+    /// - Parameters:
+    ///   - dateStr: 日期字符串
+    ///   - formatter: 日期字符串格式，必须和字符串格式对应，否则返回nil
+    /// - Returns: Date
+    static func date(from dateStr: String, formatter: String = "yyyy:MM:dd hh:mm:ss") -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = formatter
+        return dateFormatter.date(from: dateStr)
+    }
 }
 
 extension Date {
