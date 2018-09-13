@@ -65,3 +65,33 @@ let MTCachePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDire
 /** Temp目录 */
 let MTTempPath = NSTemporaryDirectory()
 
+
+// MARK:- 系统相关
+/** 系统信息 */
+let MTProcessInfo: ProcessInfo = ProcessInfo.processInfo
+/** 系统运行时间 */
+let MTSystemUpTime: TimeInterval = MTProcessInfo.systemUptime
+/** 进程环境参数 */
+let MTProcessEnvironment: [String : String] = MTProcessInfo.environment
+/** 主机名 */
+let MTHostName: String = MTProcessInfo.hostName
+/** 进程名称 */
+let MTProcess0Name: String = MTProcessInfo.processName
+/** 进程唯一标识符 */
+let MTProcessIdentifier: Int32 = MTProcessInfo.processIdentifier
+/** 全球唯一码，每次调用都不一样 */
+let MTGloballyUniqueString: String = MTProcessInfo.globallyUniqueString
+/** 操作系统版本号：字符串形式 */
+let MTOperatingSystemVersionString: String = MTProcessInfo.operatingSystemVersionString
+/** 操作系统版本 */
+let MTOperatingSystemVersion: OperatingSystemVersion = MTProcessInfo.operatingSystemVersion
+/** 当前总进程数 */
+let MTProcessorCount: Int = MTProcessInfo.processorCount
+/** 当前激活的总进程数 */
+let MTActiveProcessorCount: Int = MTProcessInfo.activeProcessorCount
+/** 设备物理内存 */
+let MTPhysicalMemory: UInt64 = MTProcessInfo.physicalMemory
+/** 当前操作系统版本是否大于指定版本 */
+let MTIsOperatingSystemAtLeast: (OperatingSystemVersion) -> Bool = { (systemVersion) -> Bool in
+    return MTProcessInfo.isOperatingSystemAtLeast(systemVersion)
+}
