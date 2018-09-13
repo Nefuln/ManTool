@@ -7,13 +7,23 @@
 import Foundation
 
 extension Date {
+    
+    /// 本地描述字符串
     public var localDescription: String {
         return self.descriptionByDateFormatter()
     }
     
+    /// 格式化日期字符串
+    ///
+    /// - Parameter formatter: 字符串格式
+    /// - Returns: 格式化后的日期字符串
     public func descriptionByDateFormatter(formatter: String = "yyyy:MM:dd hh:mm:ss") -> String {
         let timeZone = TimeZone.current
-        return ""
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = timeZone
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateFormat = formatter
+        return dateFormatter.string(from: self)
     }
 }
 
