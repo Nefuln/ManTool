@@ -31,6 +31,11 @@ extension NSObject {
     public var classType: AnyClass {
         return MT_classFromObject(self)!
     }
+    
+    public static var classType: AnyClass {
+        return MT_classFromString(self.classNameOfComplete)!
+    }
+    
 }
 
 /// 关联属性类型
@@ -89,6 +94,14 @@ extension NSObject {
     }
     
     public func getClassMethod(_ name: Selector) -> Method? {
+        return MT_getClassMethod(cls: self.classType, name: name)
+    }
+    
+    public static func getInstanceMethod(_ name: Selector) -> Method? {
+        return MT_getInstanceMethod(cls: self.classType, name: name)
+    }
+    
+    public static func getClassMethod(_ name: Selector) -> Method? {
         return MT_getClassMethod(cls: self.classType, name: name)
     }
 }

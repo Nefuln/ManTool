@@ -146,6 +146,11 @@ public func MT_getClassMethod(cls: AnyClass?, name: Selector) -> Method? {
     return class_getClassMethod(cls, name)
 }
 
+/// 方法交换
+///
+/// - Parameters:
+///   - origin: 原有方法
+///   - destination: 与之交换的方法
 public func MT_exchangeMethodImplementations(origin: Method, destination: Method) {
     method_exchangeImplementations(origin, destination)
 }
