@@ -31,7 +31,8 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.convertViewToImage()
 //        btn.allowRepeat = !btn.allowRepeat
-        debugPrint(MT_classNameFromObject(self))
+//        debugPrint(MT_classNameFromObject(self))
+        debugPrint(MTGloballyUniqueString)
     }
     
     

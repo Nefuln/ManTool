@@ -10,6 +10,7 @@
 		303F1D65214A4A8A009FE159 /* MTTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F1D64214A4A8A009FE159 /* MTTiming.swift */; };
 		303F1D67214A5E00009FE159 /* Date+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F1D66214A5E00009FE159 /* Date+MTExtension.swift */; };
 		303F1D69214A5EAB009FE159 /* DateFormatter+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F1D68214A5EAB009FE159 /* DateFormatter+MTExtension.swift */; };
+		303F1D6B214A703D009FE159 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F1D6A214A703D009FE159 /* DispatchQueue.swift */; };
 		3053D58920F6122800F5FA66 /* UIViewController+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */; };
 		3053D58A20F6122800F5FA66 /* UIDevice+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */; };
 		3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */; };
@@ -68,6 +69,7 @@
 		303F1D64214A4A8A009FE159 /* MTTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTTiming.swift; sourceTree = "<group>"; };
 		303F1D66214A5E00009FE159 /* Date+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+MTExtension.swift"; sourceTree = "<group>"; };
 		303F1D68214A5EAB009FE159 /* DateFormatter+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+MTExtension.swift"; sourceTree = "<group>"; };
+		303F1D6A214A703D009FE159 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		3053D57E20F6122700F5FA66 /* UIViewController+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MTExtension.swift"; sourceTree = "<group>"; };
 		3053D57F20F6122700F5FA66 /* UIDevice+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MTExtension.swift"; sourceTree = "<group>"; };
 		3053D58020F6122700F5FA66 /* UIApplication+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+MTExtension.swift"; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				3053D59820F6125000F5FA66 /* UserDefault+MTExtension.swift */,
 				303F1D66214A5E00009FE159 /* Date+MTExtension.swift */,
 				303F1D68214A5EAB009FE159 /* DateFormatter+MTExtension.swift */,
+				303F1D6A214A703D009FE159 /* DispatchQueue.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303F1D6B214A703D009FE159 /* DispatchQueue.swift in Sources */,
 				3053D5A420F6125100F5FA66 /* NSObject+MTExtension.swift in Sources */,
 				3053D58D20F6122800F5FA66 /* MTDeviceModel.swift in Sources */,
 				3053D58A20F6122800F5FA66 /* UIDevice+MTExtension.swift in Sources */,

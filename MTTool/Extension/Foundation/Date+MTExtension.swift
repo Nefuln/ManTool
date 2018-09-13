@@ -7,6 +7,38 @@
 import Foundation
 
 extension Date {
+    public var localDescription: String {
+        return self.descriptionByDateFormatter()
+    }
+    
+    public func descriptionByDateFormatter(formatter: String = "yyyy:MM:dd hh:mm:ss") -> String {
+        let timeZone = TimeZone.current
+        return ""
+    }
+}
+
+extension Date {
+    
+    /// 时间组件，可以各取所需
+    public var com: DateComponents {
+        let currentCalendar = Calendar.current
+        return currentCalendar.dateComponents([.era,                    // 区域
+                                               .year,                   // 年份
+                                               .quarter,                // 季度
+                                               .month,                  // 月份
+                                               .day,                    // 日期
+                                               .hour,                   // 小时
+                                               .minute,                 // 分钟
+                                               .second,                 // 秒
+                                               .nanosecond,             // 纳秒
+                                               .weekday,                // 周几
+                                               .weekdayOrdinal,         // 以当月的第一天座位第一周算出来的周数
+                                               .weekOfMonth,            // 当月中的第几周
+                                               .weekOfYear,             // 当年中的第几周
+                                               .yearForWeekOfYear,      // 每年的最后或最开始的几天根据iso8640标准属于的年份
+                                               .calendar,               // 日历
+                                               .timeZone], from: self)  // 时区
+    }
     
     /// 年份
     public var year: Int {
