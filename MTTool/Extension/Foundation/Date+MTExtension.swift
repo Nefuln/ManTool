@@ -8,6 +8,23 @@ import Foundation
 
 extension Date {
     
+    /// 是否是闰年
+    public var isLeapYear: Bool {
+        return (self.year % 4 == 0 && self.year % 100 != 0) || (self.year % 400 == 0)
+    }
+    
+    /// 当月的天数
+    public var daysOfMonth: Int {
+        switch self.month {
+        case 1, 3, 5, 7, 8, 10, 12:
+            return 31
+        case 2:
+            return self.isLeapYear ? 29 : 28
+        default:
+            return 30
+        }
+    }
+    
     /// 本地描述字符串
     public var localDescription: String {
         return self.descriptionByDateFormatter()
@@ -23,6 +40,15 @@ extension Date {
         dateFormatter.timeZone = timeZone
         dateFormatter.locale = Locale.current
         dateFormatter.dateFormat = formatter
+        return dateFormatter.string(from: self)
+    }
+    
+    /// 格式化日期字符串
+    /// 注：基于`DateFormatter`创建比较耗时，必要时可以定制标准的DateFormatter作为单例
+    ///
+    /// - Parameter dateFormatter: 日期格式
+    /// - Returns: 格式化后的日期字符串
+    public func descriptionByDateFormatter(dateFormatter: DateFormatter) -> String {
         return dateFormatter.string(from: self)
     }
     
