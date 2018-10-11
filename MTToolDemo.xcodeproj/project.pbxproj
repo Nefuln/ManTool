@@ -32,6 +32,9 @@
 		3053D5A420F6125100F5FA66 /* NSObject+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */; };
 		3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */; };
 		30958E04216F4F58004EC232 /* MTNetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30958E03216F4F58004EC232 /* MTNetworkReachabilityManager.swift */; };
+		30958E06216F572A004EC232 /* MTIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30958E05216F572A004EC232 /* MTIntTests.swift */; };
+		30958E08216F8ECA004EC232 /* Double+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30958E07216F8ECA004EC232 /* Double+MTExtension.swift */; };
+		30958E09216F8ECA004EC232 /* Double+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30958E07216F8ECA004EC232 /* Double+MTExtension.swift */; };
 		309AB0FE21480BE8002EE4D3 /* MTRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */; };
 		30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD120E54983005148F9 /* AppDelegate.swift */; };
 		30AEBCD420E54983005148F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD320E54983005148F9 /* ViewController.swift */; };
@@ -92,6 +95,8 @@
 		3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserDefaultTests.swift; sourceTree = "<group>"; };
 		30958E03216F4F58004EC232 /* MTNetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTNetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		30958E05216F572A004EC232 /* MTIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTIntTests.swift; sourceTree = "<group>"; };
+		30958E07216F8ECA004EC232 /* Double+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+MTExtension.swift"; sourceTree = "<group>"; };
 		309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTRuntime.swift; sourceTree = "<group>"; };
 		30AEBCCE20E54983005148F9 /* MTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCD120E54983005148F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +205,7 @@
 				30AEBD0820E55EDB005148F9 /* MTDeviceTests.swift */,
 				30D5930320EB4B4800C9491C /* MTNSObjectTests.swift */,
 				30D5933A20EBBACB00C9491C /* MTStringTests.swift */,
+				30958E05216F572A004EC232 /* MTIntTests.swift */,
 				30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */,
 				3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */,
 				30AEBCE820E5498F005148F9 /* Info.plist */,
@@ -259,6 +265,7 @@
 				3053D59620F6125000F5FA66 /* CGFloat+MTExtension.swift */,
 				3053D59420F6125000F5FA66 /* CGRect+MTExtension.swift */,
 				30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */,
+				30958E07216F8ECA004EC232 /* Double+MTExtension.swift */,
 				3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */,
 				3053D59920F6125100F5FA66 /* Data+MTExtension.swift */,
 				3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */,
@@ -424,6 +431,7 @@
 				3053D58F20F6122800F5FA66 /* UIView+MTExtension.swift in Sources */,
 				303F1D69214A5EAB009FE159 /* DateFormatter+MTExtension.swift in Sources */,
 				303F1D65214A4A8A009FE159 /* MTTiming.swift in Sources */,
+				30958E08216F8ECA004EC232 /* Double+MTExtension.swift in Sources */,
 				3053D59220F6122800F5FA66 /* UIColor+MTExtension.swift in Sources */,
 				3053D58B20F6122800F5FA66 /* UIApplication+MTExtension.swift in Sources */,
 				3053D59120F6122800F5FA66 /* UIAlertController+MTExtension.swift in Sources */,
@@ -440,12 +448,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30958E06216F572A004EC232 /* MTIntTests.swift in Sources */,
 				3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */,
 				30AEBD0920E55EDB005148F9 /* MTDeviceTests.swift in Sources */,
 				30D5933B20EBBACB00C9491C /* MTStringTests.swift in Sources */,
 				30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */,
 				30D5930420EB4B4800C9491C /* MTNSObjectTests.swift in Sources */,
 				30AEBCE720E5498F005148F9 /* MTToolDemoTests.swift in Sources */,
+				30958E09216F8ECA004EC232 /* Double+MTExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
