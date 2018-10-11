@@ -31,6 +31,7 @@
 		3053D5A320F6125100F5FA66 /* Character+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */; };
 		3053D5A420F6125100F5FA66 /* NSObject+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */; };
 		3063F68B20ECCF4A00A54496 /* MTUserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */; };
+		30958E04216F4F58004EC232 /* MTNetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30958E03216F4F58004EC232 /* MTNetworkReachabilityManager.swift */; };
 		309AB0FE21480BE8002EE4D3 /* MTRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */; };
 		30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD120E54983005148F9 /* AppDelegate.swift */; };
 		30AEBCD420E54983005148F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEBCD320E54983005148F9 /* ViewController.swift */; };
@@ -90,6 +91,7 @@
 		3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Character+MTExtension.swift"; sourceTree = "<group>"; };
 		3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MTExtension.swift"; sourceTree = "<group>"; };
 		3063F68A20ECCF4A00A54496 /* MTUserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserDefaultTests.swift; sourceTree = "<group>"; };
+		30958E03216F4F58004EC232 /* MTNetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTNetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTRuntime.swift; sourceTree = "<group>"; };
 		30AEBCCE20E54983005148F9 /* MTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AEBCD120E54983005148F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				30AEBD0220E549B8005148F9 /* MTUniversal.swift */,
 				309AB0FD21480BE7002EE4D3 /* MTRuntime.swift */,
 				303F1D64214A4A8A009FE159 /* MTTiming.swift */,
+				30958E03216F4F58004EC232 /* MTNetworkReachabilityManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				30AEBCD420E54983005148F9 /* ViewController.swift in Sources */,
 				3053D5A220F6125100F5FA66 /* Data+MTExtension.swift in Sources */,
 				3053D59020F6122800F5FA66 /* UIWindow+MTExtension.swift in Sources */,
+				30958E04216F4F58004EC232 /* MTNetworkReachabilityManager.swift in Sources */,
 				3053D59D20F6125100F5FA66 /* CGRect+MTExtension.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
 				3053D59E20F6125100F5FA66 /* Bool+MTExtension.swift in Sources */,
