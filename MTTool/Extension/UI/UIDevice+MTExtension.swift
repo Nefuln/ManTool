@@ -10,14 +10,7 @@ import UIKit
 
 var MTIsIPhoneX: Bool {
     if #available(iOS 11.0, *) {
-        switch UIApplication.shared.statusBarOrientation {
-        case .landscapeLeft, .landscapeRight:
-            return Int(UIApplication.shared.delegate?.window??.safeAreaInsets.left ?? 0) > 0
-        case .portrait, .portraitUpsideDown:
-            return Int(UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0) > 0
-        default:
-            return false
-        }
+        return (UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0) > 0
     } else {
         return false
     }

@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        debugPrint("是否是x系列 == \(MTIsIPhoneX)")
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.handleScreenNotification), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
 //        self.addBtns()
 //        self.convertViewToImage()
 //        btn.setTitle("测试", for: UIControlState.normal)
@@ -34,6 +36,10 @@ class ViewController: UIViewController {
 //        debugPrint(MT_classNameFromObject(self))
 //        debugPrint(MTGloballyUniqueString)
 //    }
+    
+    @objc private func handleScreenNotification() {
+        debugPrint("是否是x系列 == \(MTIsIPhoneX)")
+    }
     
     private func addAttributedLable() {
         let name = "💕 ﻩ ️ 添奶瓶"
