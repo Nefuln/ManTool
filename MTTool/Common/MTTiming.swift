@@ -32,7 +32,7 @@ class MTTiming: NSObject {
             return 0
         }
         let start = self.currentTimeClick
-        block!()
+        block?()
         let end = self.currentTimeClick
         let duration = end - start
         let nanos = duration * UInt64(info.numer) / UInt64(info.denom)

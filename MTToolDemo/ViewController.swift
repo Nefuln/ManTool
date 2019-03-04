@@ -16,25 +16,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        self.addBtns()
 //        self.convertViewToImage()
-        btn.setTitle("测试", for: UIControlState.normal)
-        btn.setTitleColor(UIColor.blue, for: UIControlState.normal)
-        btn.center = self.view.center
-        btn.tapBlock = { (b) in
-            debugPrint(Date().timeIntervalSince1970)
-        }
-        btn.allowRepeat = false
-        btn.repeatClickInterval = 1
-        btn.minClickArea = CGSize(width: 100, height: 50)
-        self.view.addSubview(btn)
+//        btn.setTitle("测试", for: UIControlState.normal)
+//        btn.setTitleColor(UIColor.blue, for: UIControlState.normal)
+//        btn.center = self.view.center
+//        btn.tapBlock = { (b) in
+//            debugPrint(Date().timeIntervalSince1970)
+//        }
+//        btn.allowRepeat = false
+//        btn.repeatClickInterval = 1
+//        btn.minClickArea = CGSize(width: 100, height: 50)
+//        self.view.addSubview(btn)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.convertViewToImage()
 //        btn.allowRepeat = !btn.allowRepeat
 //        debugPrint(MT_classNameFromObject(self))
-        debugPrint(MTGloballyUniqueString)
-    }
-    
+//        debugPrint(MTGloballyUniqueString)
+//    }
     
     private func addAttributedLable() {
         let name = "💕 ﻩ ️ 添奶瓶"
