@@ -7,15 +7,66 @@
 //
 
 import UIKit
+import MediaPlayer
+import AVFoundation
 
 class ViewController: UIViewController {
     
     fileprivate let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+    
+    lazy var btn1: UIButton = {
+        let btn = UIButton(frame: CGRect(x: 50, y: 100, width: 150, height: 50))
+        btn.backgroundColor = UIColor.white
+        btn.setTitleColor(UIColor.red, for: UIControlState.normal)
+        btn.setTitle("调高", for: .normal)
+        btn.addTarget(self, action: #selector(ViewController.handleAction1), for: UIControlEvents.touchUpInside)
+        return btn
+    }()
 
+    @objc private func handleAction1() {
+//        self.slider?.setValue(self.slider!.value + 1/16, animated: false)
+//        self.slider?.sendActions(for: UIControlEvents.touchUpInside)
+//        debugPrint("AVAudioSession.sharedInstance().accessibilityActivate() == \(AVAudioSession.sharedInstance().accessibilityActivate())")
+//        debugPrint("self.slider == \(self.slider), value == \(self.slider?.value)")
+        
+        self.mtVolumeView.turnUpVolume(to: self.mtVolumeView.currentSystemVolume + 1/16)
+
+    }
+    
+    lazy var btn2: UIButton = {
+        let btn = UIButton(frame: CGRect(x: 50, y: 200, width: 150, height: 50))
+        btn.backgroundColor = UIColor.white
+        btn.setTitleColor(UIColor.red, for: UIControlState.normal)
+        btn.setTitle("调低", for: .normal)
+        btn.addTarget(self, action: #selector(ViewController.handleAction2), for: UIControlEvents.touchUpInside)
+        return btn
+    }()
+    
+    @objc private func handleAction2() {
+        self.mtVolumeView.turnUpVolume(to: self.mtVolumeView.currentSystemVolume - 1/16)
+    }
+    
+    fileprivate let mtVolumeView = MTChangeSystemVolumeView(frame: CGRect(x: 50, y: 300, width: 150, height: 50), showSystemAlert: true)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        debugPrint("是否是x系列 == \(MTIsIPhoneX)")
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.handleScreenNotification), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        self.view.backgroundColor = UIColor.yellow
+        
+        self.view.addSubview(mtVolumeView)
+        
+//        let myVolumeView = MPVolumeView(frame: CGRect(x: 50, y: 300, width: 150, height: 50))
+//        for subview in myVolumeView.subviews {
+//            if subview is UISlider {
+//                self.slider = subview as! UISlider
+//                debugPrint("self.slider == \(self.slider), value == \(self.slider?.value)")
+//                break
+//            }
+//        }
+//        self.view.addSubview(myVolumeView)
+//
+        self.view.addSubview(self.btn1)
+        self.view.addSubview(self.btn2)
+        
 //        self.addBtns()
 //        self.convertViewToImage()
 //        btn.setTitle("测试", for: UIControlState.normal)
