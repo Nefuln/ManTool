@@ -282,9 +282,17 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		E62A71682230F59C00302E96 /* SystemEventsMonitoring */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SystemEventsMonitoring;
+			sourceTree = "<group>";
+		};
 		E6F6D4C5222D665C008921DD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E62A71682230F59C00302E96 /* SystemEventsMonitoring */,
 				E6F6D4C6222D666E008921DD /* ChangeSystemVolume */,
 			);
 			path = Components;
