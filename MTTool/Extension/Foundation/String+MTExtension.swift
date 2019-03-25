@@ -137,4 +137,119 @@ extension String {
         }
         return false
     }
+    
+    /// 是否是单个emoji字符
+    public var isSingleEmoji: Bool {
+        return self.count == 1 && containsEmoji
+    }
+    
+    /// 是否包含emoji
+    var containsEmoji: Bool {
+        return unicodeScalars.contains { $0.isEmoji }
+    }
+    
+    /// 字符串是否只包含emoji
+    var containsOnlyEmoji: Bool {
+        return !isEmpty
+            && !unicodeScalars.contains(where: {
+                !$0.isEmoji && !$0.isZeroWidthJoiner
+            })
+    }
+    
+    /// emoji字符串
+    var emojiString: String {
+        return emojiScalars.map { String($0) }.reduce("", +)
+    }
+    
+    /// emoji字符集
+    var emojis: [String] {
+        var scalars: [[UnicodeScalar]] = []
+        var currentScalarSet: [UnicodeScalar] = []
+        var previousScalar: UnicodeScalar?
+        
+        for scalar in emojiScalars {
+            if let prev = previousScalar, !prev.isZeroWidthJoiner, !scalar.isZeroWidthJoiner {
+                scalars.append(currentScalarSet)
+                currentScalarSet = []
+            }
+            currentScalarSet.append(scalar)
+            
+            previousScalar = scalar
+        }
+        
+        scalars.append(currentScalarSet)
+        
+        return scalars.map { $0.map { String($0) }.reduce("", +) }
+    }
+    
+    /// emoji字符UnicodeScalar集
+    fileprivate var emojiScalars: [UnicodeScalar] {
+        var chars: [UnicodeScalar] = []
+        var previous: UnicodeScalar?
+        for cur in unicodeScalars {
+            if let previous = previous, previous.isZeroWidthJoiner, cur.isEmoji {
+                chars.append(previous)
+                chars.append(cur)
+                
+            } else if cur.isEmoji {
+                chars.append(cur)
+            }
+            
+            previous = cur
+        }
+        
+        return chars
+    }
+    
+    func dropAllEmojis() -> String {
+        var chars: [UnicodeScalar] = []
+        for cur in unicodeScalars {
+            if !cur.isEmoji {
+                chars.append(cur)
+            }
+        }
+        return chars.map { String($0) }.reduce("", +)
+    }
+    
+    func emojiAndOtherTypeCount() -> (emojiCount: UInt, otherCount: UInt) {
+        var emojiChars: [UnicodeScalar] = []
+        var otherChars: [UnicodeScalar] = []
+        var previous: UnicodeScalar?
+        for cur in unicodeScalars {
+            if let previous = previous, previous.isZeroWidthJoiner, cur.isEmoji {
+                emojiChars.append(previous)
+                emojiChars.append(cur)
+            } else if cur.isEmoji {
+                emojiChars.append(cur)
+            } else {
+                otherChars.append(cur)
+            }
+            
+            previous = cur
+        }
+        
+        return (0, 0)
+    }
+}
+
+extension String {
+    public var charactorCount: UInt {
+        let encoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue)))
+        return self.charactorNumberWithEncoding(encoding: encoding)
+    }
+    
+    public func charactorNumberWithEncoding(encoding: String.Encoding = String.Encoding.utf8) -> UInt {
+        var length: UInt = 0
+        var p = self.cString(using: encoding)
+        let lengthOfBytes = self.lengthOfBytes(using: encoding)
+        for _ in 0..<lengthOfBytes {
+            if p != nil {
+                p?.removeFirst()
+                length = length + 1
+            } else {
+                p?.removeFirst()
+            }
+        }
+        return length
+    }
 }

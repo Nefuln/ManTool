@@ -28,7 +28,15 @@ extension Character {
     
     /// 是否是表情符号
     var isEmoji: Bool {
-        return String(self).includesEmoji()
+        return String(self).isSingleEmoji
     }
     
+    var isChinese: Bool {
+        for u in self.unicodeScalars {
+            if u.isChinese {
+                return true
+            }
+        }
+        return false
+    }
 }

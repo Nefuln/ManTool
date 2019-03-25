@@ -50,6 +50,7 @@
 		30D5934320EC777A00C9491C /* MTUIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */; };
 		30FAF9E4210AF97800B34170 /* UILable+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */; };
 		30FAF9E6210B017C00B34170 /* Int+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */; };
+		E610BB6C224905C7001B2E6D /* UnicodeScalar+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610BB6B224905C7001B2E6D /* UnicodeScalar+MTExtension.swift */; };
 		E6F6D4C8222D6690008921DD /* MTChangeSystemVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6D4C7222D6690008921DD /* MTChangeSystemVolumeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,7 @@
 		30D5934220EC777A00C9491C /* MTUIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUIViewControllerTests.swift; sourceTree = "<group>"; };
 		30FAF9E3210AF97800B34170 /* UILable+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+MTExtension.swift"; sourceTree = "<group>"; };
 		30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+MTExtension.swift"; sourceTree = "<group>"; };
+		E610BB6B224905C7001B2E6D /* UnicodeScalar+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnicodeScalar+MTExtension.swift"; sourceTree = "<group>"; };
 		E6F6D4C7222D6690008921DD /* MTChangeSystemVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChangeSystemVolumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,6 +272,7 @@
 				30FAF9E5210B017B00B34170 /* Int+MTExtension.swift */,
 				30958E07216F8ECA004EC232 /* Double+MTExtension.swift */,
 				3053D59A20F6125100F5FA66 /* Character+MTExtension.swift */,
+				E610BB6B224905C7001B2E6D /* UnicodeScalar+MTExtension.swift */,
 				3053D59920F6125100F5FA66 /* Data+MTExtension.swift */,
 				3053D59B20F6125100F5FA66 /* NSObject+MTExtension.swift */,
 				3053D59320F6125000F5FA66 /* String+MTExtension.swift */,
@@ -450,6 +453,7 @@
 				30958E04216F4F58004EC232 /* MTNetworkReachabilityManager.swift in Sources */,
 				3053D59D20F6125100F5FA66 /* CGRect+MTExtension.swift in Sources */,
 				30AEBD0420E549B9005148F9 /* MTUniversal.swift in Sources */,
+				E610BB6C224905C7001B2E6D /* UnicodeScalar+MTExtension.swift in Sources */,
 				3053D59E20F6125100F5FA66 /* Bool+MTExtension.swift in Sources */,
 				3053D58C20F6122800F5FA66 /* UIButton+MTExtension.swift in Sources */,
 				30AEBCD220E54983005148F9 /* AppDelegate.swift in Sources */,
